@@ -1,0 +1,120 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*,::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url('/images/bg-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+.article-body h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.article-body p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.btn-register {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    color: var(--violet);
+    border: none;
+}
+
+/* Heading font-family: 'Open Sans', sans-serif;
+- Mobile: 375px
+- Desktop: 1440px
+Body font-family: 'Poppins', sans-serif; */
+
+@media screen and (min-width: 350px) and (max-width: 750px) {
+    section {
+        height: 100vh;
+        
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 10% 80% 10%;
+        align-items: center;
+
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .heading {
+        align-self: center;
+    }
+
+    .heading-logo img {
+        width: 130px;
+    }
+
+    article {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        align-self: flex-start;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .article-body h1 {
+        font-size: 1.4em;
+        width: 70%;
+        margin: 15px auto;
+    }
+
+    .article-body p {
+        font-size: .75em;
+        width: 70%;
+        margin: 15px auto;
+        line-height: 1.6em;
+    }
+
+    .mockup {
+        margin-bottom: 20px;
+    }
+
+    .mockup img {
+        width: 320px;
+    }
+
+    .btn-register {
+        border-radius: 30px;
+        width: 160px;
+        height: 35px;
+    }
+
+    footer {
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 25px;
+        height: 20px;
+    }
+
+}
+
+@media screen and (min-width: 950px) and (max-width: 1500px) {
+    body {
+        width: 100vw;
+    }
+    section {
+        height: 100%;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 10% 80% 10%;
+    }
+}
+
