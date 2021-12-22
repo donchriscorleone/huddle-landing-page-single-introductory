@@ -33,6 +33,11 @@ body {
     cursor: pointer;
 }
 
+footer {
+    display: flex;
+    gap: 15px;
+}
+
 .logo {
     border: 1px solid white;
     padding: 5px;
@@ -171,9 +176,6 @@ Body font-family: 'Poppins', sans-serif; */
     footer {
         justify-self: flex-end;
         margin-right: 40px;
-
-        display: flex;
-        gap: 15px;
     }
 
     .logo {
